@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .design-div
+            {
+                background-color: black;
+                color: white;
+                text-align: center;
+                width: 50%;
+                height: 50%;
+            }
+
+            .design-text
+            {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- setiap html memiliki 2 default display view, yaitu block dan inline -->
+
+        <!-- block-level element selalu mulai di awal baris-->
+        <!-- block-level selalu mengambil lebar yang penuh-->
+        <!-- block-level element memiliki margin top dan bottom, berbda dengan inline yang tidak punya -->
+        <!-- salah satu contoh block-level adalah <div>-->
+        <h3>contoh block-level element</h3>
+        <div style="background-color: yellowgreen;">hello world</div>
+
+        <!-- sedangkan inline-element tidak dimulai di baris awal -->
+        <!-- inline-element hanya mengambil space yang dibutuhkan saja -->
+        <!-- salah satu contohnya adalah <span> didalam sebuah paragraf-->
+        <h3>contoh inline-element</h3>
+        <span style="background-color: cadetblue;">hello world</span>
+
+        <!-- <div> biasanya digunakan untuk menampung element html yang lain-->
+        <!-- <div> tidak memerlukan atribut, tetapi biasanya yg dipakai adalah style, class, dan id-->
+        <!-- ketika digunakan bersama dengan css, div bisa digunakan untuk men-style block sebuah content -->
+        <h3>contoh penggunaan div</h3>
+        <div style="background-color: black; align-items: center; color: white;"> 
+            <h2>ini merupakan element yang ditampung di div</h2>
+            <p>biasanya ini digunakan ketika kita ingin membangun block yang akan di design nantinya</p>
+        </div>
+
+        <!-- selanjutnya adalah span, span adalah inline-element yang digunakan untuk menandai sebuah text, atau bagian dari dokumen -->
+        <!-- element span tidak memiliki atribut, tetapi yg biasanya dipakai adalah style, id, dan class -->
+        <!-- ketika digunakan degan css, kita bisa men-design span sesuai keinginan kita -->
+        <h3>contoh penggunaan span </h3>
+        <p>inilah contoh penggunaan <span style="background-color: blue;">span</span>, kita bisa men-design tulisan semau kita di <span style="background-color: yellow;">sini</span></p>
+    
+        <!-- selanjutnya adalah class, atribut class biasanya digunakan untuk menspesifikan element dari html-->
+        <!-- sebuah class bisa digunakan oleh banyak element html-->
+        <!-- biasanya class digunakan ketika kita ingin men spesifikan sebuah design css -->
+        <h3>contoh penggunaan class di div</h3>
+        <div class="design-div">
+            <p>kita membuat design di css lalu menspesifikan design ini untuk yg classnya di assign saja</p>
+        </div>
+        <br>
+
+        <!-- kita juga bisa menambahkan class lain di atribut class, cukup pisahkan dengan whitespace saja-->
+        <div class="design-div design-text">
+            <p>lihat bahwa 2 div ini berbagi desgin yang sama, tetapi ukuran text yang berbeda</p>
+        </div>
+
+        <!-- yang kedua adalah id, id berbeda dengan class karena id hanya bisa di assign di satu element saja -->
+        <!-- biasanya id digunakan ketika kita ingin melakukan satu proses di satu element saja -->
+        <h3>contoh penggunaan id di div</h3>
+        <div style="align-items: center;">
+            <h2>ketika kita menekan button, maka header dibawah akan menghitung banyak ketikan button</h2>
+            <h5 id="counter">0</h5>
+            <form >
+                <button onclick="myFunction()"> click tombol </button>
+            </form>
+        </div>
+
+        <!-- selain itu, id bisa kita jadikan bookmark dengan mengandalkan link -->
+        <h3>contoh penggunaan id untuk bookmark</h3>
+        <a href="#bookmark">link ke bookmark</a>
+        <div id="bookmark">
+            <p>dengan menggunakan id, kita bisa men-assign kan link agar ketika dia di klik, maka dokumen akan otomatis ke arah sana</p>
+        </div>
+
+        <!-- ingat bahwa untuk mendeskripsikan class, kita menggunakan titik (.) didepannya, 
+             dan untuk id menggunakan (#) didepannya -->
+
+        <script>
+            var a = 0;
+
+            function myFunction()
+            {
+                let temp = document.getElementById("counter");
+                a = a + 1;
+                temp.innerHTML = a.toString();
+            }
+        </script>
+    </body>
+</html>

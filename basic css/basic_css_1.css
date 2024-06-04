@@ -1,0 +1,49 @@
+/* css selector digunakan untuk "mencari" html element yang ingin kita ubah */
+/* ada banyak jenis selector dalam html, tetapi 5 kategori utama diantaranya */
+
+/* simple selector (memilih element berdasarkan nama, id, atau class) */
+/* combinator selector (memilih element berdasarkan relasi diantara mereka) */
+/* pseudo-class selector (memilih element berdasarkan kondisi mereka) */
+/* pseudo-element selector (memilih mengganti bagian dari element) */
+/* attribut selector (memilih element berdasarkan atribut atau nilai atribut) */
+
+/*css element selector, kita memilih berdasarkan element yang kita pilih */
+p
+{
+    size: 16px;
+    color: yellow;
+}
+
+/* css id selector, kita memilih element berdasarkan id yang kita berikan di element tersebut */
+#contoh-p-with-id
+{
+    size: 20px;
+    color: blue;
+}
+
+/* css class selector, kita memilih element berdasarkan class yang kita berikan di element tersebut */
+.contoh-p-with-class
+{
+    size: 12px;
+    color: red;
+}
+
+/* kita juga bisa menspesifikkan element <p> dengan class tertentu saja yang bisa menerima style ini */
+p.contoh-p-spesific
+{
+    size: 7px;
+    color: blue;
+}
+
+/* universal selector, kita memilih semua element yang ada di html, ditandai dengan * */
+* 
+{
+    size: 20px;
+}
+
+/* kita juga bisa mengrouping selector agar mempersingkat penulisan */
+h3, h2, h1 
+{
+    size: 18px;
+    text-decoration-style: initial;
+}

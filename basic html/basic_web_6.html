@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>basic web 6</title>
+
+        <!-- jika kita ingin menambah border di table, kita bisa menggunakan css untuk mengaturnya-->
+        <!-- untuk menampilkan border dari table, kita memunculkan garis border setebal satu pixel berwarna hitam -->
+        <!-- untuk mencegah adanya 2 border yang tertimpa, kita set property css border-collapse menjadi collapse -->
+        <!-- untuk mengatur style dari table kita, kita bisa mendeklarasikannya sesudah css utama ter-run -->
+
+        <!-- kita bisa mengatur border-radius untuk mengatur kebulatan border, dan unset untuk mereset penggunaan border di salah satu css -->
+        <style>
+            table, th, td
+            {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            .round-style 
+            {
+                border-radius: 10px;
+                border-collapse: unset;
+            }
+
+            .background-table-1
+            {
+                background-color: skyblue;
+            }
+
+            th
+            {
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- table html memudahkan programmer dalam mengatur data menjadi baris dan kolom -->
+        <!-- table html dideklarasikan dengan tag table berisi baris dan kolom -->
+        <!-- td atau table data, semua yg ada di tag td berisikan content table -->
+        <!-- tr atau table row, setiap tr medeskripsikan baris dari data yang ada-->
+        <!-- kadangn kita ingin membuat header, kita bisa menggunakan tag th atau tag header -->
+        <h3>table normal</h3>
+        <table class="background-table-1">
+            <tr>
+                <th>id</th>
+                <th>username</th>
+                <th>password</th>
+            </tr>
+            <tr>
+                <td>d123</td>
+                <td>budi123</td>
+                <td>budi000</td>
+            </tr>
+            <tr>
+                <td>b421</td>
+                <td>andibrandal</td>
+                <td>penghancurmmk</td>
+            </tr>
+        </table>
+
+        <h3>contoh table berbentuk round</h3>
+        <table class="round-style">
+            <tr>
+                <th class="round-style">id</th>
+                <th class="round-style">username</th>
+                <th class="round-style">password</th>
+            </tr>
+            <tr>
+                <td class="round-style">d123</td>
+                <td class="round-style">budi123</td>
+                <td class="round-style">budi000</td>
+            </tr>
+            <tr>
+                <td class="round-style">b421</td>
+                <td class="round-style">andibrandal</td>
+                <td class="round-style">penghancurmmk</td>
+            </tr>
+        </table>
+        
+        <!-- kita bisa meng-set ukuran dari masing-masing table menggunakan css-->
+        <h3>table yang akan diset ukuran bordernya</h3>
+        <table class="background-table-1" style="width: 100%;">
+            <tr>
+                <th>id</th>
+                <th>username</th>
+                <th>password</th>
+            </tr>
+            <tr style="height: 70%;">
+                <td>d123</td>
+                <td>budi123</td>
+                <td>budi000</td>
+            </tr>
+            <tr>
+                <td>b421</td>
+                <td>andibrandal</td>
+                <td>penghancurmmk</td>
+            </tr>
+        </table>
+
+        <h3>penggunaan multiple header</h3>
+        <!-- kita bisa menggunakan colspan agar kolom kita menerima lebih dari satu kolom-->
+        <!-- atau kita bisa menggunakan rowspan jika ingin baris kita menerima lebih dari satu baris -->
+        <!-- kita bisa menggunakan tag caption untuk memberikan judul di tabel yang kita buat-->
+        <!-- kita bisa memberikan padding di table-->
+        <table>
+            <caption>data diri</caption>
+            <tr >
+                <th style="padding: 5px;" colspan="2">user data</th>
+                <th style="padding: 5px;">password</th>
+            </tr>
+            <tr style="padding: 5px;">
+                <td>d123</td>
+                <td>budi123</td>
+                <td>budi000</td>
+            </tr>
+            <tr style="padding: 5px;">
+                <td>b421</td>
+                <td>andibrandal</td>
+                <td>penghancurmmk</td>
+            </tr>
+        </table>
+    </body>
+</html>

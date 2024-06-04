@@ -1,0 +1,16 @@
+/*kita masuk ke bagian yang penting di html, yaitu border, margin, padding */
+
+.padding_p
+{
+    padding: 10px;
+}
+
+.margin_p
+{
+    margin: 10px;
+}
+
+.border_p
+{
+    border: 10px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <!-- element head adalah container dari element-element seperti title, meta, style, link, script, dan base -->
+    <!-- head merupakan element yang menyimpan metadata dari sebuah halaman html -->
+    <head>
+        <!-- title berfungsi untuk mengganti judul dari dokumen html yang kita buat -->
+        <title>basic web html 9</title>
+
+        <!-- lalu element link berfungsi untuk mengarahkan dokumen ke file css kita -->
+        <link rel="stylesheet" href="../basic css/basic_css_1.css">
+
+        <!-- tag meta berisi data-data dokumen, selain itu juga untuk men-define isi html-->
+        <meta charset="UTF-8">
+        <meta name="description" content="contoh basic html ">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+        <!-- base merupakan elment yang digunakan ketika kita ingin mengspesifikan sebuah dokumen membaca dokumen dari mana -->
+
+        <!-- tag style berfungsi untuk mennyimpan style css yang kita simpan di dokumen html kita -->
+        <style>
+            body
+            {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- kita bisa menambahkan page html didalam html yang sudah kita buat, menggunakan iframe -->
+        <h3>contoh penggunaan iframe</h3>
+        <iframe src="http://www.google.com" name="iframe_a" frameborder="2" width="200" height="300"></iframe>
+
+        <!-- kita juga bisa merubah link dari iframe menggunakan link -->
+        <P><a href="basic_web_1.html" target="iframe_a">contoh penggunaan link ke html 1</a></P>
+
+        <h3>contoh penggunaan javascript di html</h3>
+        <p id="contoh_p">halaman html sebelum dirubah</p>
+
+        <!-- untuk path alamat dalam html, ada 2 jenis path yaitu absolute path dan relative path-->
+        <!-- untuk absolute path kita memberikan alamat dokumen kita secara lengkap untuk mengambil datanya -->
+        <!-- sedangkan relative path mengambil path sesuai dengan alamat html kita -->
+
+        <h3>absolute path</h3>
+        <p><a href="http:www.google.com">contoh link ke google menggunakan absolute path</a></p>
+        <p><a href="basic_web_2.html">contoh link ke basic html 2 menggunakan relative path</a></p>
+
+        <!-- pada relative path kita bisa memberikan titik diawal untuk mengindikasikan kita ingin naik satu level dari hirarki file kita-->
+
+        <!-- kita bisa menggunakan javascript untuk membuat halaman web kita lebih efektif -->
+        <!-- ada 2 cara untuk menulis javascript, pertama tulis di dalam element script, kedua berikan alamat file js ke atribut src di element-->
+        <script>
+            document.getElementById('contoh_p').innerHTML = 'contoh yang diubah menggunakan javacript';
+        </script>
+    </body> 
+</html>
