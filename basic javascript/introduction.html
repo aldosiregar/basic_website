@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan javascript</title>
+</head>
+<body>
+    <!-- bagian yang akan diubah oleh javascript -->
+    <p id="demo">belum diubah</p>
+    <button onclick="myFunction()">coba di klik</button>
+
+    <!-- 
+        javascript adalah bahasa yang sering digunakan untuk mengubah isi dari html
+        selain bekerja dalam client side, javascript juga dapat bekerja dari server
+
+        untuk penulisannya dapat ditulis di html atau di file terpisah, mula-mula akan ditulis di page html
+        yaitu di tag <script>
+
+        untuk tutorial file terpisah akan dilakukan di tutorial selanjutnya
+
+        tag <script> dapat diletakkan di bagian head atau di bagian body yang paling bawah 
+    -->
+    <script>
+        //isi html diubah dengan menggunakan id sebagai penentu bagian mana yang ingin diubah
+        function myFunction(){
+            document.getElementById("demo").innerHTML = "sudah diubah oleh javascript";
+        }
+    </script>
+</body>
+</html>
