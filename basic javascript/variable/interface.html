@@ -5,33 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>variable</title>
     <style>
-        #variabel{
+        .boxSeperator{
             border: 1px;
             border-style: solid;
             border-radius: 5px;
             border-color: black;
             padding: 20px;
+            height: 100%;
             display: inline-block;
         }
     </style>
 </head>
 <body>
-    <div id="variabel">
+    <div class="boxSeperator">
         <h1>materi variabel</h1>
         
-        <h5>deklarasi otomatis</h5>
+        <h4>deklarasi otomatis</h4>
         <p id="automatic"></p>
 
-        <h5>menggunakan var</h5>
+        <h4>menggunakan var</h4>
         <p id="varPracticed"></p>
 
-        <h5>menggunakan let</h5>
+        <h4>menggunakan let</h4>
         <p id="letPracticed"></p>
 
-        <h5>menggunakan const</h5>
+        <h4>menggunakan const</h4>
         <p id="constPracticed"></p>
     </div>
 
+    <div class="boxSeperator">
+        <h1>materi let</h1>
+
+        <h4>block scope</h4>
+        <p id="blockScope"></p>
+
+        <h4>global scope</h4>
+        <p id="globalScope"></p>
+
+        <h4>redeclaring variable</h4>
+        <p id="redeclareVariable"></p>
+
+        <h4>redeclaring problem in var</h4>
+        <p id="redeclareProblemVar"></p>
+
+        <h4>redeclaring solved in let</h4>
+        <p id="redeclareSolvedLet"></p>
+    </div>
+
     <script src="variable.js"></script>
+    <script src="let.js"></script>
 </body>
 </html>
