@@ -3,6 +3,7 @@
  * javascript string adalah primitive dan immutable, semua string method
  * menghasilkan string baru tanpa mengubah string originalnya
  */
+console.log("string method : ");
 
 //javascript string length
 /**

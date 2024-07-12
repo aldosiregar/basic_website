@@ -4,6 +4,7 @@
  * 
  * strings ditulis dengan quotes
  */
+console.log("string : ");
 
 //using quotes
 /**
