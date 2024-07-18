@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BinerConverter</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bordering">
+        <div class="centering">
+            <h1>Text Converter</h1>
+            <h4>Convert a text into a binary</h4>
+            <textarea id="convertTarget" rows="20" cols="80"></textarea>
+            <br>
+            <button onclick="Convert()">convert</button>
+        </div>
+    
+        <div class="centering">
+            <h4>result</h4>
+            <textarea id="convertResult" rows="20" cols="80"></textarea>
+        </div>
+    </div>
+    
+    <div class="bordering">
+        <div class="centering">
+            <h1>biner converter</h1>
+            <h4>convert a biner sequence into text</h4>
+            <textarea id="Revert" rows="20" cols="80"></textarea>
+            <br>
+            <button onclick="Revert()">revert</button>
+        </div>
+
+        <div class="centering">
+            <h4>result</h4>
+            <textarea id="revertResult" rows="20" cols="80"></textarea>
+        </div>
+    </div>
+
+    <script src="js/converter.js"></script>
+</body>
+</html>

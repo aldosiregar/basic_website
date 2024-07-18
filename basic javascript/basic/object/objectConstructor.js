@@ -5,7 +5,7 @@
  * 
  * ada baiknya menulis nama constructor function dengan huruf kapital diawalnya
  */
-function constructorFunction(nama, umur, pekerjaan, alamat){
+function ConstructorFunction(nama, umur, pekerjaan, alamat){
     this.named = nama;
     this.age = umur;
     this.job = pekerjaan;
@@ -19,8 +19,8 @@ function constructorFunction(nama, umur, pekerjaan, alamat){
  * 
  * sekarang kita dapat mengisi constructor function dengan data baru
  */
-const constructData1 = constructorFunction("aldi", 23, "developer", "jln mawar");
-const constructData2 = constructorFunction("aldo", 22, "database admin", "jln jawa");
+const constructData1 = ConstructorFunction("aldi", 23, "developer", "jln mawar");
+const constructData2 = ConstructorFunction("aldo", 22, "database admin", "jln jawa");
 console.log(constructData1);
 console.log(constructData2);
 

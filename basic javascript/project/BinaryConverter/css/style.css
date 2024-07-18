@@ -1,0 +1,13 @@
+.centering{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    display: block;
+}
+
+.bordering{
+    border: 1px;
+    display: inline;
+    border-color: black;
+}
