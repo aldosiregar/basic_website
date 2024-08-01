@@ -180,7 +180,7 @@ console.log(arrays);
  * 
  * parameter yang diterima juga masih sama dengan method slice()
  */
-console.log(arrays.toSplice(0, 1));
+console.log(arrays.toSpliced(0, 1));
 
 //javascript array slice()
 /**
