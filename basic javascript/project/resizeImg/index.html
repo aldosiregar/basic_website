@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize Image For Wallpaper</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="home" class="box centering">
+        <h2>resize an image</h2>
+        <input style="" type="file" id="file" onchange="loadImageFromFile();" 
+        accept=".jpg,.jpeg,.png,.bmp" />
+
+        <div class="imageContainer">
+            <h2 class="displayer">Before</h2>
+            <img id="image">
+            <img id="imageHidden">
+        </div>
+
+        <div>
+            <h2 class="displayer">After</h2>
+            <canvas id="canvasHidden"></canvas>
+        </div>
+        
+
+        <div>
+            <label>
+                <input type="number" style="display: none;" onfocus="this.oldvalue = this.value;" id="widthInput">
+            </label>
+            <label>
+                <input type="number" style="display: none;" onfocus="this.oldvalue = this.value;" id="heightInput">
+            </label>
+            <label>
+                width : 
+                <input type="number" id="maxWidth">
+            </label>
+            <label>
+                height : 
+                <input type="number" id="maxHeight">
+            </label>
+            <label style="display: none;">
+                keep aspect : 
+                <input type="checkbox" id="keepAspectCheckbox">
+            </label>
+        
+            <label style="display: none;">
+                preset resolution : 
+                <select id="presetSelect">
+                    <option value="2000x1000">2:1 ratio</option>
+                </select>
+            </label>
+
+            <button id="resizeButton" onclick="resizeImg()">Resize</button>
+        </div>
+    </div>
+
+    
+
+    <script src="js/resize.js"></script>
+    <script src="js/loadImage.js"></script>
+    <script src="js/canvas.js"></script>
+</body>
+</html>

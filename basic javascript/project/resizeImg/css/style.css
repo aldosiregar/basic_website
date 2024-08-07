@@ -1,0 +1,25 @@
+input[type=number]{
+    max-width: 50px;
+}
+
+.imageContainer{
+    overflow: auto;
+}
+
+#imageHidden{
+    display: none;
+}
+
+.box{
+    display: block;
+}
+
+.displayer{
+    display: none;
+}
+
+.centering{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
