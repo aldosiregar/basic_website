@@ -1,0 +1,11 @@
+.formInput{
+    margin: 10px 0px;
+}
+
+.formSpace{
+    text-align: center;
+}
+
+.formInput label{
+    font-size: large;
+}

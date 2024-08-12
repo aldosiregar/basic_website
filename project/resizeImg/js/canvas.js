@@ -10,13 +10,19 @@ function resizeImg(){
 
     if(width > height){
         if(width > MAX_WIDTH){
-            height = height * (MAX_WIDTH / width);
+            let temp = height * (MAX_WIDTH / width);
+            if(temp > 50){
+                height = temp;
+            }
             width = MAX_WIDTH;
         }
     }
     else{
         if(height > MAX_HEIGHT){
-            width = width * (MAX_HEIGHT / height);
+            let temp = width * (MAX_HEIGHT / height);
+            if(temp > 50){
+                width = temp;
+            }
             height = MAX_HEIGHT;
         }
     }
@@ -26,4 +32,6 @@ function resizeImg(){
     const ctx = canvas.getContext("2d");
     const imageHidden = document.getElementById("imageHidden");
     ctx.drawImage(imageHidden, 0, 0, canvas.width, canvas.height);
+
+    document.getElementById("image").src = canvas.toDataURL();
 }

@@ -9,27 +9,25 @@
 <body>
     <div id="home" class="box centering">
         <h2>resize an image</h2>
-        <input style="" type="file" id="file" onchange="loadImageFromFile();" 
+        <input type="file" id="file" onchange="loadImageFromFile();" 
         accept=".jpg,.jpeg,.png,.bmp" />
 
         <div class="imageContainer">
-            <h2 class="displayer">Before</h2>
             <img id="image">
             <img id="imageHidden">
         </div>
 
         <div>
-            <h2 class="displayer">After</h2>
             <canvas id="canvasHidden"></canvas>
         </div>
         
 
         <div>
             <label>
-                <input type="number" style="display: none;" onfocus="this.oldvalue = this.value;" id="widthInput">
+                <input type="number"  onfocus="this.oldvalue = this.value;" id="widthInput">
             </label>
             <label>
-                <input type="number" style="display: none;" onfocus="this.oldvalue = this.value;" id="heightInput">
+                <input type="number"  onfocus="this.oldvalue = this.value;" id="heightInput">
             </label>
             <label>
                 width : 
@@ -54,8 +52,6 @@
             <button id="resizeButton" onclick="resizeImg()">Resize</button>
         </div>
     </div>
-
-    
 
     <script src="js/resize.js"></script>
     <script src="js/loadImage.js"></script>
