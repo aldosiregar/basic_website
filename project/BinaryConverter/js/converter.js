@@ -12,7 +12,7 @@ function Convert(){
                 strings += convertToBiner(data[index].charCodeAt(words)) + " ";
             }
         }
-        strings += "\n";
+        strings += " ";
     }
 
     document.getElementById("convertResult").value = strings;
@@ -50,7 +50,7 @@ function Revert(){
 function convertToBiner(data){
     let tempString = "";
 
-    for(let i = 7; i >= 0; i--){
+    for(let i = 23; i >= 0; i--){
         tempString += (data >> i) & 1;
     }
 
