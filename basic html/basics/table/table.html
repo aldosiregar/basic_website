@@ -3,12 +3,17 @@
     <head>
         <title>basic web 6</title>
 
-        <!-- jika kita ingin menambah border di table, kita bisa menggunakan css untuk mengaturnya-->
-        <!-- untuk menampilkan border dari table, kita memunculkan garis border setebal satu pixel berwarna hitam -->
-        <!-- untuk mencegah adanya 2 border yang tertimpa, kita set property css border-collapse menjadi collapse -->
-        <!-- untuk mengatur style dari table kita, kita bisa mendeklarasikannya sesudah css utama ter-run -->
+        <!-- jika kita ingin menambah border di table, 
+            kita bisa menggunakan css untuk mengaturnya-->
+        <!-- untuk menampilkan border dari table, kita memunculkan garis 
+            border setebal satu pixel berwarna hitam -->
+        <!-- untuk mencegah adanya 2 border yang tertimpa, kita atur property 
+            css border-collapse menjadi collapse -->
+        <!-- untuk mengatur style dari table kita, kita bisa 
+            mendeklarasikannya sesudah css utama dijalankan -->
 
-        <!-- kita bisa mengatur border-radius untuk mengatur kebulatan border, dan unset untuk mereset penggunaan border di salah satu css -->
+        <!-- kita bisa mengatur border-radius untuk mengatur kebulatan border, 
+            dan unset untuk mereset penggunaan border di salah satu css -->
         <style>
             table, th, td
             {
@@ -34,11 +39,15 @@
         </style>
     </head>
     <body>
-        <!-- table html memudahkan programmer dalam mengatur data menjadi baris dan kolom -->
-        <!-- table html dideklarasikan dengan tag table berisi baris dan kolom -->
-        <!-- td atau table data, semua yg ada di tag td berisikan content table -->
-        <!-- tr atau table row, setiap tr medeskripsikan baris dari data yang ada-->
-        <!-- kadangn kita ingin membuat header, kita bisa menggunakan tag th atau tag header -->
+        <!-- table html memudahkan programmer dalam mengatur data 
+            menjadi baris dan kolom -->
+        <!-- table html dideklarasikan dengan tag table yang berisi 
+            baris dan kolom -->
+        <!-- td atau table data berisikan content dari table -->
+        <!-- tr atau table row medeskripsikan baris dari 
+            table yang ada-->
+        <!-- terkadang kita ingin membuat header pada table, 
+            disini kita bisa menggunakan tag th atau tag header -->
         <h3>table normal</h3>
         <table class="background-table-1">
             <tr>
@@ -77,7 +86,8 @@
             </tr>
         </table>
         
-        <!-- kita bisa meng-set ukuran dari masing-masing table menggunakan css-->
+        <!-- kita bisa mengatur ukuran dari masing-masing 
+            table menggunakan css-->
         <h3>table yang akan diset ukuran bordernya</h3>
         <table class="background-table-1" style="width: 100%;">
             <tr>
@@ -98,10 +108,13 @@
         </table>
 
         <h3>penggunaan multiple header</h3>
-        <!-- kita bisa menggunakan colspan agar kolom kita menerima lebih dari satu kolom-->
-        <!-- atau kita bisa menggunakan rowspan jika ingin baris kita menerima lebih dari satu baris -->
-        <!-- kita bisa menggunakan tag caption untuk memberikan judul di tabel yang kita buat-->
-        <!-- kita bisa memberikan padding di table-->
+        <!-- kita bisa menggunakan colspan agar kolom kita menerima lebih 
+            dari satu kolom-->
+        <!-- atau kita bisa menggunakan rowspan jika ingin baris kita 
+            gunakan lebih dari satu baris -->
+        <!-- kita bisa menggunakan tag caption untuk memberikan judul di 
+            tabel yang kita buat-->
+        <!-- kita juga bisa memberikan padding di table-->
         <table>
             <caption>data diri</caption>
             <tr >

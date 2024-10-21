@@ -1,0 +1,73 @@
+<!--
+    Element html beranggotakan tag pembuka, content, dan tag penutup
+
+    HTML element adalah semua hal dimulai dari tag pembuka sampai tag
+    penutup
+
+    <tagname>content diisi disini</tagname>
+
+    beberapa contoh tag name adalah :
+    <h1>judul</h1>
+    <p>text</p>
+
+    namun ada juga beberapa element yang tidak memiliki konten dan
+    penutup seperti <br> yang berguna untuk memberikan whitespace,
+    element seperti ini disebut sebagai empty element
+
+    start tag   content     end tag
+    <h1>        judul       </h1>
+    <p>         text        </p>
+    <br>        none        none
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>judul</h1>
+    <!--
+        nested HTML element
+
+        sebuah element HTML dapat dimasukkan ke dalam element lain, inilah
+        yang disebut nested HTML element
+
+        semua dokumen HTML berisi nested HTML
+
+        contohnya seperti yang sedang ada sekarang, yaitu element html
+        berisi head, body, yang didalamnya juga berisi element lain
+    -->
+
+    <!--
+        jangan pernah melupakan tag penutup
+
+        beberapa element HTML akan tetap tertampil dengan benar, walau kita
+        melupakan penutupnya
+
+        tetapi jangan bergantung pada ini, karena bisa terjadi hasil yang
+        tidak kita inginkan dengan lupanya kita menaruh tag penutup
+    -->
+
+    <!--
+        empty HTML elements
+
+        HTML elements tanpa content disebut empty element
+
+        contohnya seperti tag <br> yang berguna untuk line break, dan adalah
+        empty element tanpa tag penutup
+    -->
+    <p>text <br> here</p>
+
+    <!--
+        HTML bukanlah case sensitive
+
+        HTML tag tidaklah case sensitive, <P> memiliki arti yang sama dengan
+        <p>
+
+        namun disarankan untuk memakai lowercase, terutama jika kita bekerja
+        dengan dokumen dengan tipe yang ketat seperti XHTML
+    -->
+</body>
+</html>

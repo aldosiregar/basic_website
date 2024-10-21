@@ -1,11 +1,14 @@
-/* css selector digunakan untuk "mencari" html element yang ingin kita ubah */
-/* ada banyak jenis selector dalam html, tetapi 5 kategori utama diantaranya */
+/* 
+css selector digunakan untuk "mencari" html element yang ingin kita ubah 
 
-/* simple selector (memilih element berdasarkan nama, id, atau class) */
-/* combinator selector (memilih element berdasarkan relasi diantara mereka) */
-/* pseudo-class selector (memilih element berdasarkan kondisi mereka) */
-/* pseudo-element selector (memilih mengganti bagian dari element) */
-/* attribut selector (memilih element berdasarkan atribut atau nilai atribut) */
+ada banyak jenis selector dalam html, tetapi 5 kategori utama diantaranya :
+
+1. simple selector : (memilih element berdasarkan nama, id, atau class) 
+2. combinator selector : (memilih element berdasarkan relasi diantara mereka)
+3. pseudo-class selector : (memilih element berdasarkan kondisi mereka) 
+4. pseudo-element selector : (memilih mengganti bagian dari element) 
+5. attribut selector : (memilih element berdasarkan atribut atau nilai atribut) 
+*/
 
 /*css element selector, kita memilih berdasarkan element yang kita pilih */
 p

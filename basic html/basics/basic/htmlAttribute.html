@@ -1,0 +1,61 @@
+<!--
+    HTML attribute menyediakan informasi tambahan tentang HTML elements
+
+    HTML attribute
+    - Semua element HTML dapat memiliki attribute
+    - Attribute memberikan informasi tambahan tentang elements
+    - Attribute selalu ditentukan di tag pembuka
+    - Attribute biasanya berisi pasangan nama/nilai seperti :
+        name="value"
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        href attribute
+        
+        tag <a> mendefinisikan hyperlink, attribute href menentukan
+        kemana kita akan dibawa ketika menekan hyperlink tersebut
+    -->
+    <a href="google.com">link menuju google</a>
+
+    <!--
+        attribute src
+
+        tag <img> digunakan untuk menambahkan gambar pada halaman HTML,
+        attribute src menentukan path dimana gambar tersebut akan 
+        diambil
+    -->
+    <img src="image_google.png">
+    <!--
+        ada 2 cara untuk menyatakan url pada attribute src
+
+        Absolute URl - hubungkan ke external image yang dihost diwebsite
+        lain 
+        contoh : src="https://www.w3schools.com/images/img_girl.jpg"
+
+        note : external image bisa saja mengandung copyright, jika kita
+        tidak memiliki izin untuk menggunakannya, kita dapat dikenakan 
+        peraturan pelanggaran copyright. selain itu, kita tidak dapat
+        mengontrol external image, gambar tersebut dapat tiba-tiba 
+        dihilangkan maupun digunakan
+
+        Relative URL - hubungkan ke gambar yang dihost didalam website,
+        disini URL tidak memiliki nama domain. jika URL tidak dimulai
+        dengan slash, link akan dicari tergantung dari lokasi dokumen
+        HTML saat itu
+        contoh : src="image_google.png" 
+        jika diberikan slash, maka pencarian akan dimulai dari awal
+        domain
+        contoh : src="/image_google.png"
+
+        note : disarankan untuk menggunakan relative HTML, karena
+        tag tidak akan rusak bahkan jika kita merubah domain
+    -->
+</body>
+</html>
