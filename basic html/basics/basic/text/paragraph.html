@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        HTML element <p> mendefinisikan sebuah paragraf
+
+        sebuah paragraf selalu dimulai pada new line, dan browsers secara
+        otomatis menambah beberapa white space (sebuah margin) sebelum dan
+        sesudah sebuah paragraf
+    -->
+    <p>paragraf pertama</p>
+    <p>paragraf kedua</p>
+
+    <!--
+    HTML display
+
+    kita tidak dapat mengetahui dengan pasti bagaimana HTML akan ditampilkan
+
+    layar besar ataupun kecil, dan windows yang diresize ulang akan memberikan
+    hasil yang berbeda
+
+    dengan HTML, kita tidak dapat merubah display dengan menambahkan ruang
+    tambahan atau baris extra pada kode HTML kita
+
+    browser akan secara otomatis mengeluarkan extra spaces dan lines ketika 
+    page ditampilkan
+    -->
+    <p>
+        This paragraph
+        contains a lot of lines
+        in the source code,
+        but the browser
+        ignores it.
+    </p>
+        
+    <p>
+        This paragraph
+        contains         a lot of spaces
+        in the source         code,
+        but the        browser
+        ignores it.
+    </p>
+
+    <!--
+    HTML horizontal rules
+
+    tag <hr> mendefinisikan thematic break pada page HTML, dan paling sering
+    ditampilkan sebagai garis horizontal
+
+    element <hr> digunakan untuk memisahkan konten (atau menentukan sebuah
+    perubahan) pada page HTML
+
+    tag <hr> termasuk empty tag, yang dimana dia tidak memiliki end tag
+    -->
+    <p>paragraf pertama</p>
+    <hr>
+    <p>paragraf kedua</p>
+
+    <!--
+    HTML line breaks
+
+    HTML element <br> mendefinisikan sebuah line breaks
+
+    gunakan <br> jika kita ingin line break (sebuah line baru) tanpa
+    membuat paragraf baru
+    -->
+    <p>paragraf dengan<br>line break</p>
+
+    <!--
+    permasalahan puisi
+    
+    puisi ini akan ditampilkan pada single line
+
+    contoh :
+
+    <p>
+        My Bonnie lies over the ocean.
+
+        My Bonnie lies over the sea.
+
+        My Bonnie lies over the ocean.
+
+        Oh, bring back my Bonnie to me.
+    </p>
+
+    solusi - element HTML <pre>
+    
+    element HTML <pre> mendefinisikan preformatted text
+    
+    text didalam sebuah element <pre> ditampilkan pada fixed-width font 
+    (biasanya courier), dan ia akan tetap menampilkan baik space dan 
+    line breaks
+    -->
+    <pre>
+        My Bonnie lies over the ocean.
+
+        My Bonnie lies over the sea.
+
+        My Bonnie lies over the ocean.
+
+        Oh, bring back my Bonnie to me.
+    </pre>
+</body>
+</html>
