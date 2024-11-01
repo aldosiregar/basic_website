@@ -6,41 +6,94 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- blockquote tag adalah tag yang digunakan untuk 
-            membuat quote di suatu tulisan -->
-            <blockquote style=" background-color: white;">
-                ini adalah contoh penggunaan blockquote di html
-        </blockquote>
+    <!--
+    HTML quotation and citation elements
 
-        <!-- tag q atau short quotiation berarti kita ingin 
-            memberikan quote singkat di text tersebut -->
-        <p>
-                disini ada quotiation <q>menggunakan tag q</q> di paragraf ini
-        </p>
+    pada chapter ini kita akan mempelajari element HTML <blockquote>, <q>,
+    <abbr>, <address>, <cite>, dan <bdo>
+    -->
 
-        <!-- tag abbr atau abbreviations adalah tag yang kita gunakan ketika 
-            kita ingin memberikan penjelasan singkatan -->
-        <p><abbr title="World Trade Center">
-                        WTC</abbr> terbakar pada 11 september tahun 2000
-        </p>
+    <!-- 
+    HTML <blockquote> untuk quotations
 
-        <!-- tag address digunakan ketika kita ingin melampirkan 
-            alamat di dokumen html -->
-        <address>
-                jln pasir padi
-                nomer rumah 20
-                pangkalpinang
-        </address>
+    HTML element <blockquote> adalah bagian yang dikutip dari source lain. 
+    
+    browsers biasanya meng-indent element <blockquote> 
+    -->
+    <blockquote cite="https://en.wikipedia.org/wiki/Wiki">
+        wiki adalah artikel yang dibuat oleh lebih dari 1 contributor
+    </blockquote>
 
-        <!-- tag cite digunakan ketika kita ingin memberikan nama yang 
-            mendeskripsikan sebuah karya seni -->
-        <p>
-                <cite>Monalisa</cite>
-                merupakan karya leonardo davinci yang paling banyak diketahui di seluruh dunia
-        </p>
+    <!-- 
+    HTML <q> untuk short quotations
 
-        <!-- tag bdo atau bi-directional override merupakan tag yang membuat 
-            tulisan menjadi sebaliknya -->
-        <bdo dir="rtl">arah tulisan yang dirubah dengan tag bdo</bdo>
+    tag HTML <q> mendefinisikan short quotation
+
+    browsers bianya menambahkan quotation marks disekeliling quotation
+    -->
+    <p>
+        disini ada quotiation <q>menggunakan tag q</q> di paragraf ini
+    </p>
+
+    <!-- 
+    HTML <abbr> untuk abbreviations
+
+    tag  HTML <abbr> adalah tag yang kita gunakan untuk singkatan atau acronym 
+    seperti "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM"
+
+    membuat abbreviations dapat memberikan informasi yang berguna untuk
+    browsers, sistem penerjemah dan search-engines.
+
+    tip : 
+    gunakan title global attribute untuk menunjukkan deskripsi dari
+    abbreviations/acronym ketika kita mengarahkan mouse ke element
+    -->
+    <p><abbr title="World Trade Center">
+        WTC</abbr> terbakar pada 11 september tahun 2000
+    </p>
+
+    <!-- 
+    HTML <address> untuk contact information
+
+    tag HTML <address> mendefinisikan informasi kontak untuk penulis/pemilik
+    dari sebuah dokumen atau artikel.
+    
+    informasi kontak dapat berupa alamat email, URL, alamat fisik, 
+    nomor telepon, media social, dsb.
+
+    text didalam element <address> biasanya dirender di italic, dan
+    browsers akan selalu menambahkan line break sebelum dan sesuah 
+    element <address>
+    -->
+    <address>
+        jln pasir padi
+        nomer rumah 20
+        pangkalpinang
+    </address>
+
+    <!-- 
+    HTML <cite> untuk work title
+
+    tag HTML <cite> mendefinisikan judul dari karya kreatif (sebuah buku,
+    puisi, lagu, film, lukisan, patung, dsb.)
+
+    note : 
+    nama seseorang bukanlah karya seni
+
+    text dielement <cite> biasanya dirender diitalic
+    -->
+    <p>
+        <cite>Monalisa</cite>
+        merupakan karya leonardo davinci yang paling banyak diketahui di seluruh dunia
+    </p>
+
+    <!-- 
+    HTML <bdo> untuk bi-directional override
+
+    BDO adalah kepanjangan dari Bi-Directional Override
+
+    tag HTML <bdo> digunakan untuk meng-override arah text saat itu
+    -->
+    <bdo dir="rtl">arah tulisan yang dirubah dengan tag bdo</bdo>
 </body>
 </html>

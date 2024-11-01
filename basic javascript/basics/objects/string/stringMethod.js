@@ -49,9 +49,11 @@ console.log(a.at(2));
  * note : 
  * method at() adalah tambahan baru di javascript
  * 
- * method ini mendukung penggunaan index negative yang mana tidak didukung oleh charAt()
+ * method ini mendukung penggunaan index negative yang mana tidak didukung 
+ * oleh charAt()
  * 
- * sekarang kita bisa menggunakan string.at(-2) dibandingkan string.charAt(string.length - 2)
+ * sekarang kita bisa menggunakan string.at(-2) dibandingkan 
+ * string.charAt(string.length - 2)
  */
 
 //property access []
@@ -59,11 +61,14 @@ console.log(a[0]);
 /**
  * note : 
  * property access akan sedikit tak bisa diprediksi
- *  1. ini akan membuat string terlihat seperti array (padahal tentu saja bukan)
- *  2. jika tidak ada character yang ditemukan, [] mengembalikan undefined, sedangkan charAt
- *     mengembalikan string kosong
- *  3. metode ini hanya bisa untuk membaca (a[0] = "b" tidak akan memberikan error, tapi juga tidak
- *     terjadi apa-apa)
+ *  1. ini akan membuat string terlihat seperti array 
+ *     (padahal tentu saja bukan)
+ * 
+ *  2. jika tidak ada character yang ditemukan, [] mengembalikan undefined, 
+ *     sedangkan charAt mengembalikan string kosong
+ * 
+ *  3. metode ini hanya bisa untuk membaca (a[0] = "b" tidak akan memberikan 
+ *     error, tapi juga tidak terjadi apa-apa)
  */
 a[0] = "k";
 console.log(a);
@@ -78,26 +83,29 @@ console.log(a);
 
 //javscript string slice()
 /**
- * slice akan mengambil bagian dari string dan mengembalikan bagian yang diekstrak ke string baru
+ * slice akan mengambil bagian dari string dan mengembalikan bagian yang 
+ * diekstrak ke string baru
  * 
- * method ini mengambil 2 parameters : start position, dan end position, (end tidak termasuk) 
+ * method ini mengambil 2 parameters : start position, dan end position, 
+ * (end tidak termasuk) 
  * 
  * note : 
- * end itu berada di index + 1, jadi jika terdapat string dengan panjang 5, maka jika di slice
- * batas slicenya ada 5, bukan 4
+ * end itu berada di index + 1, jadi jika terdapat string dengan panjang 5, 
+ * maka jika di slice batas slicenya ada 5, bukan 4
  */
 let b = a.slice(0, 5);
 console.log(b);
 
 /**
- * jika kita tidak menspesifikkan akhir dari slicenya, kita akan mengambil semua string dimulai
- * dari parameter pertama
+ * jika kita tidak menspesifikkan akhir dari slicenya, kita akan mengambil 
+ * semua string dimulai dari parameter pertama
  */
 b = a.slice(1);
 console.log(b);
 
 /**
- * jika kita menggunakan index negatif, maka posisinya akan dihitung dari belakang string
+ * jika kita menggunakan index negatif, maka posisinya akan dihitung dari 
+ * belakang string
  */
 console.log(a.slice(-1));
 
@@ -110,8 +118,8 @@ console.log(a.slice(-5, -1));
 /**
  * substring() mirip dengan slice()
  * 
- * perbedaannya ada di nilai start dan end yang lebih kecil dari 0 dianggap sebagai 0
- * (tidak memperbolehkan adanya negative index)
+ * perbedaannya ada di nilai start dan end yang lebih kecil dari 0 dianggap 
+ * sebagai 0(tidak memperbolehkan adanya negative index)
  * 
  * jika kita tidak memberikan parameter end, maka method substring() akan
  * mengambil semua string setelah start
@@ -122,12 +130,14 @@ console.log(a.substring(0, 5));
 /**
  * substr() juga mirip dengan slice()
  * 
- * bedanya parameter keduanya menentukan berapa banyak string yang akan kita ambil setelah
- * parameter start
+ * bedanya parameter keduanya menentukan berapa banyak string yang akan kita 
+ * ambil setelah parameter start
  * 
- * jika kita tidak memberikan parameter length, maka substr() akan mengambil semua string
+ * jika kita tidak memberikan parameter length, maka substr() akan mengambil 
+ * semua string
  * 
- * jika diberikan index negatif, maka pengambilan string akan dimulai dari belakang
+ * jika diberikan index negatif, maka pengambilan string akan dimulai dari 
+ * belakang
  * 
  * substr() sudah usang di javascript terbaru
  */
