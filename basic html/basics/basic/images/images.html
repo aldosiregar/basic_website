@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    HTML images
+
+    images dapat meningkatkan design dan penampilan dari sebuah web page
+    -->
+    <img src="data/background_image.jpg" alt="background_image">
+
+    <!--
+    HTML images syntax
+
+    tag HTML <img> digunakan untuk menambahkan sebuah image ke sebuah web
+    page
+
+    images tidak secara teknis dimasukkan kedalam sebuah web page, images
+    dihubungkan ke web pages, tag <img> membuat sebuah holding space
+    untuk image yang direfrenced
+
+    tag <img> kosong, hanya berisi attributes, dan tidak memiliki clossing tag
+
+    tag <img> memiliki 2 attribute yang diperlukan untuk bekerja :
+    
+    - src : mencari jalur ke image tersebut
+
+    - alt : menentukan alternatif text untuk image
+
+    syntax :
+    <img src="url" alt="alternatetext">
+    -->
+
+    <!--
+    attribute src
+
+    attribute src diperlukan untuk menentukan path (URL) ke image
+
+    note : 
+    ketika sbeuah web page dimuat, browserlah yang saat itu mengambil gambar
+    dari web server dan memasukkannya ke page. 
+    
+    karena itu, pastikan image tersebut benar-benar ada di tempat yang 
+    berhubungan dengan web page, jika tidak maka pengunjung akan mendapatkan 
+    sebuah broken link icon. 
+    
+    broken link icon dan text alt akan ditampilkan jika browser tidak dapat
+    menemukan image
+    -->
+
+    <!--
+    attribute alt
+
+    attribute alt yang dibutuhkan tadi akan memberikan text alternative untuk 
+    image, jika user dengan suatu alasan tidak dapat melihatnya (karena 
+    koneksi yang lambat, error pada attribute src, atau jika user menggunakan
+    screen reader)
+
+    nilai dari attribute alt harus mendeskripsikan image tersebut
+
+    jika sebuah browser tidak dapat menemukan image tersebut, maka browser
+    akan menampilkan nilai dari attribute alt
+
+    tip :
+    screen reader adalah sebuah software program yang membaca kode HTML, dan
+    memungkinkan user untuk "mendengar" content, screen readers berguna untuk
+    orang yang visually impaired atau learning disabled 
+    -->
+
+    <!--
+    image size - width and height
+
+    kita dapat menggunakan attribute style untuk menentukan panjang dan lebar
+    dari sebuah image
+    -->
+    <img src="data/background_image.jpg" alt="background_image" 
+    style="width: 500px; height: 300px;">
+
+    <!--
+    atau, kita dapat menggunakan attribute width dan height
+    -->
+    <img src="data/background_image_2.jpg" alt="background_image_2"
+    width="300" height="500">
+    
+    <!--
+    attribute width dan height selalu mendefinisikan width dan height dari 
+    image dalam ukuran pixel
+
+    note : 
+    selalu spesifikkan width dan height dari sebuah image. jika width dan 
+    height tidak ditentukan, web page akan tidak stabil ketika image
+    dimuat
+    -->
+
+    <!--
+    width dan height, atau style
+
+    attribute width, height, dan style semuanya valid di HTML
+
+    tetapi, kami menyarankan menggunakan attribute style, ini akan mencegah
+    styles sheets untuk merubah ukuran dari images
+    -->
+
+    <!--
+    images di folder lain
+
+    jika kita mempunyai images di sub-folder, kita harus memasukkan nama 
+    folder di attribute src
+    -->
+
+    <!--
+    images pada server/website lain
+
+    beberapa web sites mengarahkan sebuah image dari server lain
+
+    untuk mengarahkan image ke server lain, kita harus menentukan absolute
+    (full) URL di attribute src
+
+    notes untuk external images : 
+    external image mungkin ada dibawah copyright. jika kita tidak memiliki 
+    izin untuk menggunakannya, kita mungkin akan mendapat violation of 
+    copyright laws. sebagai tambahan, kita tidak dapat mengatur external
+    image, mereka dapat tiba-tiba dibuang atau diubah
+    -->
+
+    <!--
+    animated images
+
+    HTML memperbolehkan penggunaan animated GIF
+    -->
+    <img src="data/giphy.jpg" alt="kucing" style="width: 200px; height: 100px;">
+
+    <!--
+    image sebagai sebuah link
+
+    untuk menggunakan image sebagai sebuah link, taruh tag <img> didalam
+    tag <a>
+    -->
+    <a href="https://www.google.com">
+        <img src="data/image_google.png" alt="gambar google">
+    </a>
+
+    <!--
+    image floating
+
+    gunakan property CSS float untuk membuat image float ke kiri atau 
+    kekanan dari sebuah text
+    -->
+    <p>
+        <img src="data/giphy.jpg" alt="kucing" style="float: right; width: 50px; height: 40px;">
+        kucing akan float ke kanan dari text
+    </p>
+
+    <p>
+        <img src="data/giphy.jpg" alt="kucing" style="float: left; width: 50px; height: 40px;">
+        kucing akan float ke kiri dari text
+    </p>
+
+    <!--
+    common image formats
+
+    ini adalah beberapa format yang umum digunakan pada file image, dimana
+    di support di semua browsers (chrome, edge, firefox, safari, opera)
+
+    abbreviation    file format                             file extension
+    APNG            Animated Portable Network Graphics      .apng
+
+    GIF             Graphics interchange format             .gif
+
+    ICO             Microsoft Icon                          .ico, .cur
+
+    JPEG            Joint Photographic Expert Group Image   .jpg, .jpeg, .jfif, .pjpeg, .pjp
+
+    PNG             Portable Network Graphics               .png
+
+    SVG             Scaleable Vector Graphics               .svg
+    -->
+</body>
+</html>

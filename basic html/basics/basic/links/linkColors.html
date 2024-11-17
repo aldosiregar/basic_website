@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        disini, sebuah link yang belum dikunjungi akan berwarna hijau tanpa
+        underline, link yang sudah dikunjungi akan berwarna pink anpa 
+        underline, dan sebuah link aktif akan berwarna kuning dan underlined
+
+        tambahan juga, ketika mouse ada di sebuah link (a:hover) link tersebut
+        akan menjadi berwarna merah dan underlined
+        */
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        /*
+        css untuk link button
+        */
+        .button-link:link, a:visited{
+            background-color: silver;
+            color: black;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .button-link:hover, .button-link:active{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    HTML liks - different colors
+
+    sebuah link HTML ditampilkan dengan warna yang berbeda tergantung
+    dari apakah ia telah didatangi, belum, atau masih aktif
+    -->
+
+    <!--
+    HTML link colors
+
+    secara default, sebuah link akan muncul seperti ini (di semua browser)
+    
+    - link yang belum dikunjungi akan memiliki garis bawah dan berwarna biru
+
+    - link yang sudah dikunjungi akan memiliki garis bawah dan berwarna ungu
+
+    - link yang masih aktif akan memiliki garis bawah dan berwarna merah
+
+    kita dapat mengubah kondisi warna link menggunakan css
+    -->
+
+    <!--
+    link buttons
+
+    sebuah link juga dapat dibuat sebagai sebuah button, menggunkana CSS
+    -->
+    <a href="https://www.google.com" class="button-link">new text</a>
+</body>
+</html>

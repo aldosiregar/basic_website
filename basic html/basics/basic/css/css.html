@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- internal CSS -->
+    <style>
+        body{
+            background-color: black;
+        }
+
+        h1{
+            color: red;
+        }
+    </style>
+
+    <!-- external CSS -->
+    <link rel="stylesheet" href="external.css">
 </head>
 <body>
     <!--
@@ -53,6 +66,142 @@
     external CSS files, namun, pada tutorial ini kita akan menggunakan
     inline dan internal styles, karena ini lebih mudah untuk didemonstrasikan,
     dan juga mudah untuk kita coba
+    -->
+
+    <!--
+    inline CSS
+
+    inline CSS digunakan untuk menerapkan style unik untuk satu HTML elements
+
+    inline CSS menggunakan atribut style pada element HTML
+
+    pada contoh dibawah kita akan mengatur warna text dari <p> menjadi biru
+    -->
+    <p style="color: blue;">
+        contoh inline css
+    </p>
+
+    <!--
+    internal CSS
+
+    internal CSS digunakan untuk mendefinisikan style untuk satu halaman HTML
+
+    internal CSS didefinisikan pada bagian <head> di halaman HTML, didalam
+    element <style>
+
+    pada contoh dibawah atur warna text untuk SEMUA element <h1> 
+    (pada page tersebut) menjadi biru, dan background dari <body> 
+    akan berwarna hitam
+    -->
+    <h1>contoh header yg diset di tag style</h1>
+
+    <!--
+    external CSS
+
+    sebuah sheet style ecternal digunakan untuk mendefinisikan style dari
+    banyak halaman HTML
+
+    untuk menggunakan external style sheet, tambahkan sebuah link pada 
+    bagian <head> di setiap page html
+
+    pada contoh dibawah, element <p> akan diwarnai secara default dengan
+    warna putih, dan pengaturan warna tersebut akan diberikan dari
+    external style sheet
+    -->
+    <p>
+        ini bagian paragraf yang diatur dari external style sheet
+    </p>
+
+    <!--
+    external style sheet dapat ditulis di text editor manapun.
+
+    file tersebut tidak boleh memiliki kode HTML, dan harus disimpan dengan
+    extension .css
+
+    lihat bagaimana penulisan external CSS di file external.css
+
+    tip : 
+    dengan sebuah external style sheet, kita dapat mengubah bentuk
+    dari semua web site, hanya dengan mengubah satu file
+    -->
+
+    <!--
+    CSS colors, fonts, dan sizes
+
+    disini kita akan mempraktekkan beberapa CSS properties yang sering digunakan
+
+    kita akan mempelajarinya lebih dalam dikemudian hari
+
+    - property color mendefinisikan warna text yang akan digunakan 
+    
+    - property font-family mendefinisikan font yang akan digunakan
+
+    - property font-size mendefinisikan ukuran text yang akan digunakan
+
+    untuk ketiga contoh diatas, kita akan menggunakan inline CSS agar
+    lebih mudah dibaca
+    -->
+
+    <p style="color: green; font-size: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        ini contoh element p yang diatur warna, ukuran text, dan font familynya
+    </p>
+
+    <!-- 
+    CSS border
+
+    property border mendefinisikan sebuah border yang mengelilingi element
+    HTML 
+    
+    tip :
+    kita dapat mendefinisikan sebuah border hampir di semua element HTML
+    -->
+    <p style="border: 10px solid yellow; color: white;">
+        ini merupakan contoh penggunaan property border
+    </p>
+
+    <!-- 
+    CSS padding
+
+    property padding mendefinisikan sebuah padding (space) antara text dan 
+    border
+    -->
+    <p style="border: 10px solid blue; padding: 20px; color: white;">
+        ini contoh penggunaan padding yang ditambahkan di sekitar border
+    </p>
+    
+    <!-- 
+    CSS margin
+
+    property margin mendefinisikan sebuah margin (jarak) diluar dari border     
+    -->
+    <p style="border: 10px solid green; color: white; margin: 20px;">
+        ini contoh penggunaan margin yang diimplementasi di border
+    </p>
+
+    <!-- 
+    lebih lengkap tentang perbedaan padding dan margin akan dijelaskan di
+    tutorial selanjutnya 
+    -->
+
+    <!--
+    link ke external CSS
+
+    external style sheets dapat direfrensikan dengan sebuah full URL atau
+    dengan sebuah path (jalur) yang relatif ke web page saat ini
+
+    contoh penggunaan full URL untuk menghubungkan style sheet ke web page:
+
+    <link rel="stylesheet" href="https://www.webpages.com/html/styles.css">
+
+    dan ini contoh untuk menghubungkan style sheet yang berlokasi di folder 
+    html pada web site saat ini : 
+
+    <link rel="stylesheet" href="/html/styles.css">
+
+    dan pada contoh ini akan menghubungkan sebuah style sheet yang berlokasi
+    pada folder yang sama dengan web page saat ini :
+
+    <link rel="stylesheet" href="styles.css">
     -->
 </body>
 </html>

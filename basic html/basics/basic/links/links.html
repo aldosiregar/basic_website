@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    HTML links
+
+    links ditemukan hampir di semua web pages, links membuat users dapat
+    menjelajahi web site dari page ke page
+    -->
+
+    <!--
+    HTML links - hyperlinks
+
+    HTML links adalah hyperlinks
+
+    kita dapat meng-clik pada sebuah link dan pergi ke dokumen lainnya
+
+    ketika kita mengarahkan mouse ke sebuah link, tanda panah mouse
+    akan berubah menjadi tangan kecil
+
+    tip : 
+    sebuah link tidak harus berbentuk sebuah text, sebuah link dapat
+    juga berbentuk gambar atau berbagai element HTML lain
+    -->
+
+    <!-- 
+    HTML links - syntax
+
+    tag HTML <a> mendefinisikan sebuah hyperlink, ia memiliki syntax berikut :
+    
+    <a href="url">link text</a>
+
+    atribut paling penting dalam element <a> adalah atribut href, yang dimana
+    menentukan tujuan link
+
+    link text adalah bagian yang akan terlihat oleh pembaca
+
+    meng-click link text akan mengirim pembaca ke URL address yang 
+    telah ditentukan di href
+    -->
+    <a href="http://www.google.com">ini adalah contoh tag a <br><br></a>
+
+    <!-- 
+    secara default, link akan ditampilkan sebagai berikut di semua browser :
+    
+    - link yang belum dikunjungi akan memiliki garis bawah dan berwarna biru
+    
+    - link yang sudah dikunjungi akan memiliki garis bawah dan berwarna ungu
+    
+    - link yang aktif akan memiliki garis bawah dan berwarna merah
+
+    tip : 
+    links tentunya dapat diatur bentuknya dengan CSS, untuk memiliki bentuk 
+    lain
+    -->
+            
+    <!-- 
+    HTML links - target attribute
+
+    secara default, halaman yang terhubung akan ditampilkan di browser window
+    saat itu. untuk mengubah ini, kita harus mengatur target lain untuk link 
+    tersebut
+
+    attribute target menentukan dimana kita akan membuka linked dokumen 
+    tersebut
+
+    attribute target dapat memiliki satu diantara keempat nilai dibawah
+    ini : 
+    
+    1. _self : default, membuka dokumen di window/tab yg sama jika diklik
+
+    2. _blank : membuka dokumen di window/tab baru 
+
+    3. _parrent : membuka dokumen di frame parrent
+    
+    4. _top : membuka dokumen di full body dari window 
+    -->
+    <a href="basic_web_1.html" target="_blank">
+        implementasi target _blank <br><br>
+    </a>
+    
+    <a href="basic_web_2.html" target="_parrent">
+        implementasi target _parrent <br><br>
+    </a>
+    
+    <a href="basic_web_3.html" target="_top">
+        implementasi target _top <br><br>
+    </a>
+    
+    <!-- 
+    Absolute URL vs Relative URL
+
+    pada contoh diatas, kita menggunakan sebuah absolute URL 
+    (full web address) di attribute href
+
+    sebuah local link (sebuah link yang menghubungkan webpage ke page yang 
+    berada di website yang sama) disebut sebagai relative URL 
+    (tanpa bagian "https://www")
+    -->
+    <h3 id="absolut">contoh url absolut</h3>
+    <p> <a href="http://www.google.com">
+        link google dengan url absolut</a>
+    </p>
+    <br>
+    <h3 id="relatif">
+        contoh url relatif
+    </h3>
+    <p> <a href="basic_web_1.html"> 
+        link google dengan url relatif</a>
+    </p>
+    
+    <!-- 
+    HTML Links - menggunakan sebuah image sebagai sebuah link
+
+    untuk menggunakan sebuah image sebagai sebuah link, cukup taruh <img>
+    didalam tag <a>
+    -->
+    <h3>contoh img dalam tag a</h3>
+    <a href="http://www.google.com">
+        <img src="image_google.png" alt="img google" style="width: 200; height: 200;">
+    </a>
+    
+    <!-- 
+    link ke sebuah email address
+
+    gunakan mailto: didalam attribute href untuk membuat link yang akan
+    membukan program email user (untuk memperbolehkan mereka mengirim
+    email baru)
+    -->
+    <p><a href="mailto:comunismfree@gmail.com">send email</a></p>
+    
+    <!-- 
+    button sebagai sebuah link
+
+    untuk menggunakan HTML button sebagai sebuah link, kita harus menambahkan
+    beberapa kode javascript
+
+    javascript membuat kita dapat mengatur apa yang akan terjadi pada suatu
+    keadaan, seperti meng-click sebuah button
+    -->
+    <button style="width: 200; height: 100;" onclick="document.location='http://www.google.com'"></button>
+    
+    <!-- 
+    link title
+
+    attribute title memberikan informasi tambahan tentang sebuah element.
+    informasi ini biasanya ditunjukkan sebagai sebuah tooltip text ketika
+    mouse ada di element tersebut
+    -->
+    <p> 
+        <a href="http://google.com" title="go to google web">google link</a>
+    </p>
+</body>
+</html>
