@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        tentukan background image pada element <p>
+        */
+        p {
+            background-image: url("data/giphy.jpg");
+        }
+
+        /*
+        tentukan background image pada element <body>
+
+        atur background-repeat ke no-repeat
+
+        atur background-attachment menjadi fixed
+
+        seta atur background size menjadi cover
+        */
+        body {
+            background-image: url("data/background_image.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /*
+            untuk mengcover seluruh element
+            */
+            background-size: cover;
+
+            /*
+            untuk membuat background image merengang sampai fit ke seluruh isi 
+            element
+            */
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    html background image
+
+    sebuah background image dapat dispesifikkan untuk hampi semua element
+    HTML
+    -->
+
+    <!--
+    background image pada sebuah element HTML
+
+    untuk menambahkan sebuah background image pada element HTML, gunakan
+    attribute HTML style dan property css background-image
+    
+    contoh : 
+    tambahkan sebuah background image pada sebuah element html
+    -->
+    <p style="background-image: url('data/image_google.png');"></p>
+
+    <!--
+    kita juga dapat langsung menentukan background image pada element <style>,
+    pada bagian <head> 
+    -->
+
+    <!--
+    background image pada sebuah page
+
+    jika kita ingin seluruh isi page untuk mempunyai sebuah background image, 
+    kita harus menentukan background imagenya pada element <body> 
+    -->
+
+    <!--
+    background repeat
+
+    jika sebuah background image lebih kecil daripada element, maka image 
+    tersebut akan mengulangi dirinya sendiri, baik secara horizontal maupun
+    vertikal, sampai ia mencapai akhir element
+
+    untuk menghindari background image dari mengulangi dirinya sendiri,
+    atur property background-repeat ke no-repeat
+    -->
+
+    <!--
+    background cover
+
+    jika kita ingin sebuah background image untuk mengcover seluruh element,
+    kita harus mengatur property background-size menjadi cover
+
+    juga, untuk memastikan seluruh element selalu tercover, atur 
+    property background-attachment menjadi fixed
+
+    dengan cara ini, background iimage akan mengcover seluruh element,
+    tanpa ada stretching (image akan menjaga proporsi orignalnya, tanpa
+    menyesuaikannya pada proporsi screen pengguna)
+    -->
+
+    <!--
+    background strecth
+
+    jika kita ingin background image untuk meregang agar fit dengan seluruh 
+    element, kita dapat mengatur property background-size menjadi 100% 100%
+    -->
+</body>
+</html>
