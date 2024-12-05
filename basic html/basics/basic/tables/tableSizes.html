@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    HTML table sizes
+
+    HTML table dapat memiliki ukuran yang berbeda pada setiap column, row, 
+    atau seluruh table
+
+    gunakan attribute style dengan properties width atau height untuk 
+    menentukan ukuran dari sebuah table, row, ataupun column
+    -->
+
+    <!--
+    html table width
+
+    untuk mengatur lebar dari sebuah table, tambahkan attribute style pada
+    element <table>
+
+    contoh : 
+    atur width dari table menjadi 100%
+    -->
+    <h3>table width</h3>
+    <table style="width: 100%;">
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+        </tr>
+    </table>
+    <!--
+    note : 
+    menggunakan percentage sebagai size unit untuk lebar berarti seberapa 
+    lebar element ini dibandingkan dengan parent elementnya, yang dimana pada
+    kasus ini element <body>
+    -->
+
+    <!--
+    HTML table column width
+
+    untuk mengatur ukuran dari specific column, tambahkan attribute style pada
+    element <th> atau <td>
+
+    contoh : 
+    set lebar dari kolom pertama menjadi 70%
+    -->
+    <h3>table column width</h3>
+    <table style="width: 100%;">
+        <tr>
+            <th style="width: 70%;">firstname</th>
+            <th>lastname</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td>al</td>
+            <td>do</td>
+            <td>22</td>
+        </tr>
+    </table>
+
+    <!--
+    HTML table row height
+
+    untuk mengatur tinggi dari specific row, tambahkan style attribute pada 
+    element table row
+
+    contoh :
+    set tinggi dari row kedua menjadi 200 pixels
+    -->
+    <h3>table row height</h3>
+    <table style="width: 100%;">
+        <tr>
+            <th>years</th>
+            <th>month</th>
+        </tr>
+        <tr style="height: 200px;">
+            <td>2001</td>
+            <td>06</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* zebra stripes effects */
+        tr:nth-child(even){
+            background-color: #D6FEEE;
+        }
+
+        /* vertical zebra stripes effect */
+        td:nth-child(even){
+            background-color: #D6FEEE;
+        }
+
+        /* combined vertical and horizontal zebra stripes */
+        tr:nth-child(even){
+            background-color: rgba(150, 212, 212, 0.4);
+        }
+
+        th:nth-child(even), td:nth-child(even){
+            background-color: rgba(150, 212, 212, 0.4);
+        }
+
+        /* horizontal dividers */
+        tr{
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* hoverable table */
+        tr:hover{
+            background-color: #D6FEEE;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    HTML table styling
+
+    gunakan CSS untuk membuat table kita terlihat lebih baik
+    -->
+
+    <!--
+    HTML table - zebra stripes
+
+    jika kita menambahkan sebuah background color pada setiap table row lain, 
+    kita akan mendapat efek zebra stripes
+
+    untuk mengatur setiap table row lainnya berbeda warna, gunakan selector 
+    :nth-child(even) seperti ini 
+    
+    note : 
+    jika kita menggunakan (odd) daripada (even), styling hanya akan terjadi 
+    pada baris ganjil, daripada genap
+    -->
+    <h3>zebra stripes effect</h3>
+    <table>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>salary</th>
+        </tr>
+        <tr>
+            <td>back</td>
+            <td>30</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>lack</td>
+            <td>23</td>
+            <td>1500</td>
+        </tr>
+    </table>
+
+    <!--
+    HTML table - vertical zebra stripes
+
+    untuk membuat vertical zebra stripes, atur setiap column lainnya, daripada
+    setiap row
+
+    set :nth-child(even) untuk table data element
+
+    note : 
+    taruh :nth-child() selector pada elements <th> dan <td> jika kita ingin 
+    mengatur baik kedua header dan table cells biasa
+    -->
+
+    <!--
+    gabungan vertical dan horizontal zebra stripes
+
+    kita dapat menggabungkan styling dari kedua contoh diatas dan kita akan 
+    mendapatkan stripes pada setiap beberapa baris dan kolom
+
+    kita dpaat menggunakan transparent color jika kita ingin mendapatkan 
+    overlapping effect
+
+    gunakan warna rgba() untuk menentukan transparancy dari warna tersebut
+    -->
+
+    <!--
+    Horizontal dividers 
+
+    jika kita ingin membuat border hanya pada bagian bottom dari setiap 
+    table row, kita dapat membuat sebuah table dengan horizontal dividers
+
+    tambahkan property border-bottom ke semua element <tr> untuk mendapatkan
+    horizontal dividers
+    -->
+
+    <!--
+    hoverable table
+    
+    gunakan selector :hover pada <tr> untuk meng-highlight table row ketika
+    dipilih oleh mouse
+    -->
+</body>
+</html>

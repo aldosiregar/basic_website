@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- jika kita ingin menambah border di table, 
+            kita bisa menggunakan css untuk mengaturnya-->
+        <!-- untuk menampilkan border dari table, kita memunculkan garis 
+            border setebal satu pixel berwarna hitam -->
+        <!-- untuk mencegah adanya 2 border yang tertimpa, kita atur property 
+            css border-collapse menjadi collapse -->
+        <!-- untuk mengatur style dari table kita, kita bisa 
+            mendeklarasikannya sesudah css utama dijalankan -->
+
+        <!-- kita bisa mengatur border-radius untuk mengatur kebulatan border, 
+            dan unset untuk mereset penggunaan border di salah satu css -->
+    <style>
+        table, th, td
+        {
+        /*
+        menambahkan border pada table
+        */
+        border: 1px solid black;
+        /*
+        untuk menghindari double border
+        */
+        border-collapse: collapse;
+        }
+
+        /*
+        membuat border invisible
+        */
+        .style-tables {
+            /*
+            css nesting 
+            */
+            table, th, td{
+                border: 1px solid white;
+                border-collapse: collapse;
+            }
+            th, td{
+                background-color: #96D4D4;
+            }
+        }
+
+        /*
+        membuat border membulat diujung
+        */
+        .round-style {
+            table, th, td
+            {
+                border-radius: 10px;
+                border: 1px solid black;
+                border-collapse: unset;
+            }
+            th, td{
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+        }
+
+        /*
+        membuat dotted table
+        */
+        .dotted-table{
+            th, td{
+                border-style: dotted;
+                border-collapse: unset;
+            }
+        }
+
+        .colored-borders {
+            th, td{
+                border-color: #96d;
+            }
+        }
+
+        .background-table-1
+        {
+            background-color: #189021;
+        }
+
+        th
+        {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    HTML table borders
+
+    HTML tables dapat memiliki border yang memiliki styles dan bentuk yang 
+    berbeda
+    -->
+
+    <!--
+    how to add a border
+
+    untuk menambahkan sebuah border, gunakan CSS border property pada 
+    element table, th, dan td
+    -->
+
+    <!--
+    collapsed table borders
+
+    untuk menghindari double border seperti pada contoh sebelumnya, atur 
+    property CSS border-collapse menjadi collapse
+    -->
+
+    <!--
+    style table borders
+
+    jika kita mengatur background color dari setiap cell, dan memberikan
+    border warna putih (sama seperti document background), kita akan 
+    mendapatkan kesan border tak kasat mata
+    -->
+    <div class="style-tables">
+        <table>
+            <tr>
+                <td>one</td>
+                <td>two</td>
+                <td>three</td>
+            </tr>
+        </table>
+    </div>
+
+    <!--
+    round table border
+
+    dengan property border-radius, border akan dibulatkan ujungnya
+    -->
+
+    <h3>contoh table berbentuk round</h3>
+    <div class="round-style">
+        <table>
+            <tr>
+                <th>id</th>
+                <th>username</th>
+                <th>password</th>
+            </tr>
+            <tr>
+                <td>d123</td>
+                <td>budi123</td>
+                <td>budi000</td>
+            </tr>
+            <tr>
+                <td>b421</td>
+                <td>andibrandal</td>
+                <td>penghancurmmk</td>
+            </tr>
+        </table>
+    </div>
+        
+    <!--
+    dotted table borders
+
+    dengan property border-style, kita dapat mengatur tampilan 
+    dari sebuah border
+
+    beberapa nilai untuk border-style antara lain : 
+
+    - dotted
+    - dashed
+    - solid
+    - double
+    - groove
+    - ridge
+    - inset
+    - outset
+    - none
+    - hidden
+    -->
+    <h3>dotted table</h3>
+    <div class="dotted-table">
+        <table>
+            <tr>
+                <td>new</td>
+                <td>old</td>
+                <td>og</td>
+            </tr>
+        </table>
+    </div>
+
+    <!--
+    border color
+
+    dengan property border-color, kita dapat mengatur warna dari 
+    sebuah border
+    -->
+    <h3>border color</h3>
+    <div class="colored-borders">
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </table>
+    </div>
+
+        <!-- kita bisa mengatur ukuran dari masing-masing 
+            table menggunakan css-->
+        <h3>table yang akan diset ukuran bordernya</h3>
+        <table class="background-table-1" style="width: 100%;">
+            <tr>
+                <th>id</th>
+                <th>username</th>
+                <th>password</th>
+            </tr>
+            <tr style="height: 70%;">
+                <td>d123</td>
+                <td>budi123</td>
+                <td>budi000</td>
+            </tr>
+            <tr>
+                <td>b421</td>
+                <td>andibrandal</td>
+                <td>penghancurmmk</td>
+            </tr>
+        </table>
+
+        <h3>penggunaan multiple header</h3>
+        <!-- kita bisa menggunakan colspan agar kolom kita menerima lebih 
+            dari satu kolom-->
+        <!-- atau kita bisa menggunakan rowspan jika ingin baris kita 
+            gunakan lebih dari satu baris -->
+        <!-- kita bisa menggunakan tag caption untuk memberikan judul di 
+            tabel yang kita buat-->
+        <!-- kita juga bisa memberikan padding di table-->
+        <table>
+            <caption>data diri</caption>
+            <tr >
+                <th style="padding: 5px;" colspan="2">user data</th>
+                <th style="padding: 5px;">password</th>
+            </tr>
+            <tr style="padding: 5px;">
+                <td>d123</td>
+                <td>budi123</td>
+                <td>budi000</td>
+            </tr>
+            <tr style="padding: 5px;">
+                <td>b421</td>
+                <td>andibrandal</td>
+                <td>penghancurmmk</td>
+            </tr>
+        </table>
+</body>
+</html>

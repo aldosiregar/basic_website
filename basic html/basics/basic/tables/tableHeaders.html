@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        table headers text align
+        */
+        th{
+            /* align to left */
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    HTML table headers
+
+    HTML table dapat memiliki headers untuk setiap column atau row, atau untuk 
+    banyak columns/rows
+    -->
+
+    <!--
+    HTML table headers
+
+    table headers didefinisikan dengan elements <th>, setiap element <th> 
+    merepresentasikan sebuah table cell
+    -->
+    <h3>table headers</h3>
+    <table>
+        <tr>
+            <th>firstname</th>
+            <th>lastname</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td>aldo</td>
+            <td>fausta</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>didi</td>
+            <td>lers</td>
+            <td>42</td>
+        </tr>
+    </table>
+
+    <!--
+    vertical table headers
+
+    untuk menggunakan column pertama sebagai table headers, definisikan 
+    cell pertama pada setiap row sebagai element <th> 
+    -->
+    <h3>vertical table headers</h3>
+    <table>
+        <tr>
+            <th>firstname</th>
+            <td>luck</td>
+            <td>min</td>
+        </tr>
+        <tr>
+            <th>lastname</th>
+            <td>life</td>
+            <td>max</td>
+        </tr>
+        <tr>
+            <th>age</th>
+            <td>12</td>
+            <td>32</td>
+        </tr>
+    </table>
+
+    <!--
+    align table headers
+    
+    secara default, table headers adalah bold dan centered
+
+    untuk left-align table headers tersebut, gunakan property css 
+    text-align
+    -->
+
+    <!--
+    header untuk multiple columns
+
+    kita dapat mempunyai sebuah header yang mengambil 2 atau lebih
+    columns
+
+    untuk melakukan ini, gunakan attribute colspan pada element 
+    <th>
+    -->
+    <h3>header with multiple column</h3>
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td>jack</td>
+            <td>darson</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>max</td>
+            <td>lend</td>
+            <td>45</td>
+        </tr>
+    </table>
+
+    <!--
+    table caption
+
+    kita dapat menambahkan sebuah caption yang berfungsi sebagai 
+    heading untuk seluruh table
+    
+    untuk menambahkan sebuah caption, gunakan tag <caption>
+    -->
+    <h3>table caption</h3>
+    <table style="width: 100%;">
+        <caption>monthly savings</caption>
+        <tr>
+            <th>month</th>
+            <th>savings</th>
+        </tr>
+        <tr>
+            <td>january</td>
+            <td>100rb</td>
+        </tr>
+        <tr>
+            <td>february</td>
+            <td>20rb</td>
+        </tr>
+    </table>
+    
+    <!--
+    note :
+    tag <caption> harus langsung ditambahkan setelah tag <table>
+    -->
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    HTML <picture> element
+
+    HTML <picture element> memberikan web developer keleluasaan dalam
+    menentukan image resources 
+
+    element <picture> mengandung satu atau lebih element <source>, setiap
+    elementnya mengacu pada gambar yang berbeda melalui attribute srcset,
+    dengan begini browser dapat memilih image yang paling cocok dengan view
+    saat ini dan/atau device saat itu
+
+    setiap element <source> memiliki attribute media yang mendefinisikan kapan
+    image itu paling cocok ditampilkan
+    -->
+    <picture>
+        <source media="(min-width: 650px)" srcset="data/image_google.png">
+        <source media="(min-width: 465px)" srcset="data/giphy.jpg">
+        <img src="data/background_image.jpg" alt="background">
+    </picture>
+
+    <!--
+    note : 
+    selalu tentukan element <img> sebagai element last child untuk element 
+    <picture>. element <img> digunakan oleh browser yang tidak mendukung element
+    <picture>, jika tidak mendukung, atau tidak ada tag <source> yang match 
+    -->
+    
+    <!--
+    kapan menggunakan element picture
+
+    ada dua tujuan untuk penggunaan element <picture>
+    
+    1. bandwidth
+    jika kita memiliki screen atau device kecil, maka ia tidak perlu untuk menampilkan
+    sebuah image besar, browser akan menggunakan element <source> pertama yang sesuai
+    dengan ketentuan attribute media, dan akan mengabaikan element lainnya
+
+    2. format support
+    beberapa browsers atau device dapat tidak mensupport semua format image, dengan 
+    menggunakan element <picture>, kita dapat menambbah image untuk semua format, dan
+    browser akan menggunakan format pertama yang sesuai, dan mengabaikan element-element
+    lainnya
+
+    contoh : 
+    browser akan menggunakan image format pertama jika sesuai
+    
+    <picture>
+        <source srcset="image_1.png">
+        <source srcset="image_2.jpg">
+        <img src="img_primary.gif" alt="cat" style="width:auto;">
+    </picture>
+
+    note : 
+    browser akan menggunakan element <source> pertama yang sesuai dan mengabaikan element
+    <source> lainnya
+    -->
+</body>
+</html>
