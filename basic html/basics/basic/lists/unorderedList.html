@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- editan untuk navigation bar -->
+    <style>
+        .ul-style
+        {
+            /*agar mark list tidak terlihat oleh user */
+            list-style-type: none;
+            /*margin dan padding jadi 0 */
+            margin: 0;
+            padding: 0;
+            /* jika ada kelebihan, buat menjadi tersembunyi */
+            overflow: hidden;
+            /* warna background dari navbar menjadi hitam*/
+            background-color: black;
+        }
+
+        .li-floating
+        {
+            /*arahkan semua list ke bagian kiri */
+            float: left;
+        }
+
+        .li-a-style 
+        {
+            /* agar semuah list memiliki bentuk */
+            display: block;
+            /* warna tulisan putih agar kontras dengan background */
+            color: white;
+            /* agar tulisannya align ke tengah */
+            text-align: center;
+            /* padding agar ada jarak antara setiap <li>, serta agar warnanya bisa diatur */
+            padding: 16px;
+            /* agar tidak ada dekorasi teks seperti link sudah ditekan, dll */
+            text-decoration: none;
+        }
+        
+        a
+        {
+            /* warna dari text link menjadi putih */
+            color: white;
+        }
+
+        /* jika <a> didalam <li> di-hover user */
+        li a:hover
+        {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    HTML unordered list
+
+    tag HTML <ul> mendefinisikan sebuah unordered (bulleted) list
+    -->
+
+    <!--
+    unordered HTML list
+
+    sebuah unordered list dimulai dengan tag <ul>, setiap list item dimulai 
+    dengan tag <li>
+
+    list items akan ditandai dengan bullet (lingkaran hitam kecil) secara 
+    default
+    -->
+    <ul>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+    <!--
+    unordered HTML list - list item marker
+
+    property css list-style-type digunakan untuk mendefinisikan style dari 
+    list item marker, ia dapat memiliki satu dari beberapa nilai berikut
+
+    - disc : atur list item marker menjadi sebuah bullet (default)
+
+    - circle : atur list item marker menjadi sebuah lingkara
+
+    - square : atur list item marker menjadi sebuah square
+
+    - none : atur list items menjadi tidak ter-marked
+    -->
+    <h3>marking di unordered list</h3>
+    <h3>disc</h3>
+    <ul style="list-style-type: disc;">
+        <li>jahe</li>
+    </ul>
+    <h3>circle</h3>
+    <ul style="list-style-type: circle;">
+        <li>kopi</li>
+    </ul>
+    <h3>square</h3>
+    <ul style="list-style-type: square;">
+        <li>teh</li>
+    </ul>
+    <h3>none</h3>
+    <h3 style="list-style-type: none;">
+        <li>susu</li>
+    </h3>
+
+    <!-- 
+    nested HTML list
+
+    list dapat di nested (list didalam list)
+    -->
+    <h3>nested tag</h3>
+    <ul>
+        <ul>
+            <li>kopi</li>
+            <li>teh</li>
+        </ul>
+        <ol>
+            <li>susu</li>
+            <li>madu</li>
+        </ol>
+    </ul>
+    <!--
+    note : 
+    sebuah list item (<li>) dapat memiliki sebuah list baru, dan element HTML 
+    lain, seperti images, link, dsb
+    -->
+
+    <!-- 
+    horizontal list dengan css
+
+    html list dapat diatur dalam banyak cara dengan css
+
+    satu cara yang populer adalah dengan mengatur sebuah list secara horizontal,
+    untuk membuat sebuah navigation menu :
+    -->
+    <h3>navigation bar</h3>
+    <ul class="ul-style">
+        <li class="li-floating li-a-style" ><a href="basic_web_1.html">basic 1</a></li>
+        <li class="li-floating li-a-style" ><a href="basic_web_2.html">basic_2</a></li>
+        <li class="li-floating li-a-style" ><a href="basic_web_3.html">basic_3</a></li>
+    </ul>
+</body>
+</html>

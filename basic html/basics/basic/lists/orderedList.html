@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    HTML ordered lists
+
+    tag HTML <ol> mendefinisikan sebuah ordered list, sebuah oredered list 
+    dapat berbentuk numerical maupun alphabetical
+    -->
+
+    <!--
+    ordered HTML list
+
+    sebuah ordered list dimulai dengan tag <ol>, setiap list item dimulai 
+    dengan tag <li>
+
+    list items akan ditandai dengan number secara default
+    -->
+    <h3>ordered list</h3>
+    <ol>
+        <li>coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <!--
+    ordered HTML list - attribute type
+
+    attribute type dari tag <ol>, mendefinisikan type dari list item marker
+    
+    - type="1" : list items akan ditandai dengan numbers (default)
+
+    - type="A" : list items akan ditandai dengan uppercase letters
+
+    - type:"a" : list items akan ditandai dengan lowercase letters
+
+    - type:"I" : list items akan ditandai dengan uppercase roman numbers
+
+    - type:"i" : list items akan ditandai dengan lowercase roman numbers
+    -->
+    <h3>numbers ordered list</h3>
+    <ol type="1">
+        <li>coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ol>
+    
+    <h3>uppercase letters ordered list</h3>
+    <ol type="A">
+        <li>coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ol>
+
+    <h3>lowercase letter ordered list</h3>
+    <ol type="a">
+        <li>coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ol>
+
+    <h3>uppercase roman numbers ordered list</h3>
+    <ol type="I">
+        <li>coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ol>
+
+    <h3>lowercase roman numbers ordered list</h3>
+    <ol type="i">
+        <li>coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ol>
+
+    <!--
+    control list counting
+
+    secara default, sebuah ordered list akan mulai menghitung dari 1, jika 
+    kita ingin mulai menghitung dari angka tertentu, kita dapat menggunakan
+    attribute start 
+    -->
+    <h3>control list counting</h3>
+    <ol start="50">
+        <li>items 1</li>
+        <li>items 2</li>
+        <li>items 3</li>
+    </ol>
+
+    <!--
+    nested HTML list
+
+    list dapat juga di nested (list didalam list)
+    -->
+    <h3>nested HTML list</h3>
+    <ol>
+        <li>Coffee
+            <ol>
+                <li>Robusta</li>
+                <li>Arabica</li>
+            </ol>
+        </li>
+        <li>Tea
+            <ol>
+                <li>Black Tea</li>
+                <li>Earl Grey</li>
+            </ol>
+        </li>
+        <li>Milk</li>
+    </ol>
+</body>
+</html>

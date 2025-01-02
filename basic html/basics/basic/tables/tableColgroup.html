@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    HTML table colgroup
+
+    element <colgroup> digunakan untuk mengatur kolom spesific pada sebuah 
+    table
+    -->
+
+    <!--
+    HTML table colgroup
+
+    jika kita ingin mengatur 2 kolom pertama pada sebuah table, gunakan 
+    elements <colgroup> dan <col>
+
+    element <colgroup> harus digunakan sebagai sebuah container untuk 
+    spesifikasi column
+
+    setiap group ditentukan dengan element <col>
+
+    attribute span mengatur berapa banyak columns yang akan mendapatkan
+    style tersebut
+
+    attribute style menentukan gaya yang akan diberikan pada column 
+    tersebut
+
+    note : 
+    ada beberapa limited selection dari legal css properties for 
+    colgroups
+    -->
+    <h3>table colgroup</h3>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: #D6EEEE;">
+        </colgroup>
+        <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+        </tr>
+    </table>
+    <!--
+    note : 
+
+    tag <colgroup> harus menjadi child dari element <table> dan harus
+    ditempatkan sebelum table element lain, seperti <thead>, <tr>, 
+    <td>, dsb., namun setelah element <caption> jika ada
+    -->
+
+    <!--
+    legal CSS properties
+
+    ada beberapa selection dari CSS proeprties yang diperbolehkan 
+    untuk digunakan dalam colgroup
+
+    - width property
+    - visibility property
+    - background properties
+    - border properties
+
+    selain itu properties CSS lain tidak akan memiliki dampak apapun 
+    pada table kita
+    -->
+
+    <!--
+    multiple col elements
+
+    jika kita ingin mengatur gaya lebih banyak columns dengan styles 
+    berbeda, gunakan lebih banyak element <col> didalam <colgroup>
+    -->
+    <h3>multiple Col elements</h3>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: #D6EEEE;">
+            <col span="3" style="background-color: pink;">
+        </colgroup>
+        <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+        </tr>
+    </table>
+
+    <!--
+    empty colgroups
+
+    jika kita ingin mengatur column di tengah dari sebuah table,
+    tambahkan sebuah element <col> "kosong" (tanpa styles) untuk
+    columns sebelumnya
+    -->
+    <h3>empty colgroup</h3>
+    <table>
+        <colgroup>
+            <col span="3">
+            <col span="2" style="background-color: #D6EEEE;">
+        </colgroup>
+        <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+        </tr>
+    </table>
+
+    <!--
+    hide columns
+
+    kita dapat menyembunyikan column dengan property 
+    visibility: collapse
+    -->
+    <h3>hide columns</h3>
+    <table>
+        <colgroup>
+            <col span="3">
+            <col span="2" style="visibility: collapse;">
+        </colgroup>
+        <tr>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+            <th>SUN</th>
+        </tr>
+    </table>
+</body>
+</html>
